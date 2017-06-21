@@ -1,0 +1,40 @@
+{
+  "name": "veb-subscribe",
+  "version": "1.0.1",
+  "description": "Use Meteor Tracker reactivity inside Vue components",
+  "main": "index.js",
+  "scripts": {
+    "compile": "babel --presets es2015 -d lib/ src/",
+    "prepublish": "npm run compile",
+    "dev": "npm-watch"
+  },
+  "watch": {
+    "compile": "src/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akryum/vue-meteor-integration.git"
+  },
+  "keywords": [
+    "vue",
+    "meteor",
+    "integration",
+    "tracker",
+    "reactivity"
+  ],
+  "author": "Nizul Zaim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevsignStudio/veb-subscribe/issues"
+  },
+  "homepage": "https://github.com/DevsignStudio/veb-subscribe#readme",
+  "dependencies": {
+      "lodash": "^4.5.0",
+      "socket.io-client": "^2.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "npm-watch": "^0.1.6"
+  }
+}
